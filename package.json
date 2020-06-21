@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nodemon",
+    "start": "nodemon",
     "build": "rimraf ./build && tsc",
-    "start": "npm run build && node build/index.js",
+    "start:prod": "node build/index.js",
     "lint": "eslint . --ext .ts",
     "test": "jest"
   },
@@ -32,7 +32,6 @@
     "typescript": "^3.9.5"
   },
   "engines": {
-    "node": "12.8.1",
-    "yarn": "1.22.4"
+    "node": "12.8.1"
   }
 }
